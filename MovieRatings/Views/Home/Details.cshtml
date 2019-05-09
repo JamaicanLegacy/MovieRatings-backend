@@ -1,0 +1,22 @@
+﻿@model Movie
+
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>@Model.Title</h2>
+
+<div class="img-thumbnail">
+    <img alt="@Model.Title" src="@Model.ImgThumbnailUrl" style="width:435px;height:750px"/>
+    <div class="cation-full">
+        <h3>
+            <a href="#">@Model.Title</a>
+        </h3>
+        <h3>Rating: need to implement</h3>
+        <h3>IMDB:       </h3>
+        <h3>RottenTomato:</h3>
+        <h4>@Html.DisplayNameFor(Model => Model.ReleaseDate): @Model.ReleaseDate</h4>
+        <p>@Model.Description</p>
+    </div>
+</div>

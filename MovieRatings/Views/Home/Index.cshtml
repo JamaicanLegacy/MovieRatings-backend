@@ -1,0 +1,24 @@
+﻿@model IEnumerable<MovieRatings.Models.Movie>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center col-lg-12 col-md-12 col-sm-12">
+    <h1 class="display-4">Welcome</h1>
+</div>
+    <div class="row">
+        @foreach (var movie in Model)
+        {
+            <div class="col-lg-3 col-md-3">
+                <div class="thumbnail">
+                    <img src="@movie.ImgThumbnailUrl" alt="" style=" width:200px;height:280px" />
+                    <div class="cation">
+                       <h3>
+                            <a asp-controller="Home" asp-action="Details" asp-route-id="@movie.MovieId"> @movie.Title</a>
+                       </h3>
+                       <div>@movie.ReleaseDate</div>
+                    </div>
+                </div>
+           </div>
+        }
+</div>

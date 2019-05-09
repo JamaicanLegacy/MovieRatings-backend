@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MovieRatings.Models.Actor">
+    <Position X="2.5" Y="6.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAQAACAAAAAAAAAAAACIAAgAAAAAAAAAAk=</HashCode>
+      <FileName>Models\Actor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MovieRatings.Models.Director">
+    <Position X="11.5" Y="7.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAGAAAAAQAACAAAAAAAAAAAACAAAgAAAAAAEAAAg=</HashCode>
+      <FileName>Models\Director.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MovieRatings.Models.Genre">
+    <Position X="5.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAgIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Genre.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="MovieGenres" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="MovieRatings.Models.Movie">
+    <Position X="8.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAUAoAEgAAAAAAAAAAQAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Models\Movie.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="MovieActors" />
+      <Property Name="MovieDirectors" />
+      <Property Name="MovieGenres" />
+      <Property Name="MovieMediaHouses" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="MovieRatings.Models.Ratings">
+    <Position X="5.75" Y="4" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAogAAAAAAAAAQAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Models\Rating.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Movie" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MovieRatings.Models.MovieGenre">
+    <Position X="8.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAMAAAAAIAAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\MovieGenre.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Genre" />
+      <Property Name="Movie" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MovieRatings.Models.MovieActor">
+    <Position X="5.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAkAAAAAAAAAAEAQAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\MovieActor.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Movie" />
+      <Property Name="Actor" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MovieRatings.Models.MovieDirector">
+    <Position X="8.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAACAAAEAAAAAAAAAAAAQAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Models\MovieDirector.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Director" />
+      <Property Name="Movie" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MovieRatings.Models.MovieMediaHouse">
+    <Position X="11.5" Y="4.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAQAAAAAAEAAAAACAAAA=</HashCode>
+      <FileName>Models\MovieMediaHouse.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Movie" />
+      <Property Name="MediaHouse" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MovieRatings.Models.MediaHouse">
+    <Position X="14.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAEAEAAAAAAAAAA=</HashCode>
+      <FileName>Models\MediaHouse.cs</FileName>
+      <NewMemberFileName>Models\Mediahouse.cs</NewMemberFileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="MoviesMediaHouses" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
