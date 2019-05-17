@@ -52,7 +52,10 @@ namespace MovieRatings
             services.AddTransient<IActorsRepository, ActorsRepository>();
             services.AddTransient<IGenresRepository, GenresRepository>();
             services.AddTransient<IDirectorsRepository, DirectorsRepository>();
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2).AddJsonOptions(
+            options => options.SerializerSettings.ReferenceLoopHandling =
+            Newtonsoft.Json.ReferenceLoopHandling.Ignore
+    ); ;
 
         }
 
